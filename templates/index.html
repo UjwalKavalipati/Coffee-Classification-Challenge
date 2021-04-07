@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<br><br><h3>{{ prediction_text }}<h3>
+</head>
+
+<body>
+
+    <div style="color:Black">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Coffee Type Prediction</h2>
+            <h3>Score for Sweetness(0-10)</h3><input type="number" step="0.01" min='0' max='10' id="first" name="Sweetness" required="required">
+            <h3>Score For Balance(0-10)</h3><input type="number" step="0.01" min='0' max='10' id="second" name="Balance" required="required">
+            <h3>Score For Body(0-10)</h3><input type="number" step="0.01" min='0' max='10' id="third" name="Body" required="required">
+            <h3>Score For Acidity(0-10)</h3><input type="number" step="0.01" min='0' max='10' id="first" name="Acidity" required="required">
+			<h3>Score For After taste(0-10)</h3><br><input type="number" step="0.01" min='0' max='10' id="first" name="Aftertaste" required="required">
+            <h3>Score For Flavor(0-10)</h3><br><input type="number" step="0.01" min='0' max='10' id="first" name="Flavor" required="required">
+            <h3>Score For Uniformity(0-10)</h3><br><input type="number" step="0.01" min='0' max='10' id="second" name="Uniformity" required="required">
+			<h3>Cupper Points(0-10)</h3><br><input type="number" step="0.01" min='0' max='10' id="first" name="CupperPoints" required="required">
+			<h3>Score For Aroma(0-10)</h3><br><input type="number" step="0.01" min='0' max='10' id="first" name="Aroma" required="required">
+			<h3>Score For Clean Cup(0-10)</h3><br><input type="number" step="0.01" min='0' max='10' id="second" name="CleanCup" required="required">
+			<h3>Total Number of Category One Defects(0-31) </h3><br><input type="number" min='0' max='31' id="first" name="CatOne" required="required">
+			<h3>Total Number of Category Two Defects(0-60)</h3><br><input type="number"  min='0' max='60' id="first" name="CatTwo" required="required">
+            <h3>Moisture Content(0-0.30)</h3><br><input type="number" step="0.01" min='0' max='0.3' id="first" name="Moisture" required="required">
+            <br><br><button id="sub" type="submit ">Predict Coffee Type</button>
+            <br>
+        </form>
+
+
+
+        
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color:coral;
+            text-align: center;
+            padding: 0px;
+        }
+        
+       
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+       
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
