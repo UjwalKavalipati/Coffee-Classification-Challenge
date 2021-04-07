@@ -8,6 +8,25 @@ I am using Windows 64 bit operating system with conda version of 4.9.2 and pytho
 
 
 # Steps to run:
+First, pull the repo into your local machine.
 1. Open anaconda prompt in your system.
-2. Create a virtual environment: conda create -n coffeeprediction python=3.6
-3. 
+2. Create a virtual environment: 
+``` bash
+conda create -n coffeeprediction python=3.6
+```
+Here coffeeprediction is the virtual envionment name
+
+3. Activate the virtual environment:
+``` bash
+conda activate coffeeprediction
+```
+4. Now navigate to the directory where you have all the files in this repo. 
+5. Install the required libraries:
+``` bash
+pip install requirements.txt
+```
+6. Run the file app.py
+``` bash
+python app.py
+```
+7. 
