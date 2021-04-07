@@ -29,4 +29,10 @@ pip install requirements.txt
 ``` bash
 python app.py
 ```
-7. 
+7. Enter the values for various quality attributes of coffee and predict the coffee type.
+8. Go to Jupyter Notebook to open the Coffee Classification and Clustering.ipynb file.
+``` bash
+jupter notebook
+```
+9. Navigate to the ipynb file and explore it. Details about loading the dataset,EDA,feature engineering, feature selection, classification,clustering model building and evaluation are explained in the ipynb file.
+10. The Coffee Classification and Clustering.ipynb file only shows the best classification and clustering models. Details about all other models implemented are given in the document.
