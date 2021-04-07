@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 import pandas as pd
 import xgboost as xgb
-import sklearn
+
 
 app = Flask(__name__)
 model = pickle.load(open('xg_boost_classification_model.pkl', 'rb'))
