@@ -23,7 +23,7 @@ conda activate coffeeprediction
 4. Now navigate to the directory where you have all the files in this repo. 
 5. Install the required libraries:
 ``` bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 6. Run the file app.py
 ``` bash
